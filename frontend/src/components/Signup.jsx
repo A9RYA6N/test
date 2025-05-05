@@ -12,7 +12,7 @@ const Signup = () => {
         try {
             const apiObj={
                 email:email,
-                password:pass
+                password:password
             }
             axios({
                 method:"POST",

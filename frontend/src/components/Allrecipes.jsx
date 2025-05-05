@@ -16,7 +16,7 @@ const Allrecipes = ({recipe}) => {
             <button onClick={()=>{
                 axios({
                     method:"DELETE",
-                    url:`https://test-zeta-one-58.vercel.app/recipes/${id}`,
+                    url:`https://test-zeta-one-58.vercel.app/recipes/${recipe._id}`,
                     headers:{
                         'x-access-token':localStorage.getItem("token")
                     }

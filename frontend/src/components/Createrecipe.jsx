@@ -17,7 +17,7 @@ const Createrecipe = () => {
             }
             axios({
                 method:"POST",
-                url:"hhttps://test-zeta-one-58.vercel.app/recipes/create-recipe/",
+                url:"https://test-zeta-one-58.vercel.app/recipes/create-recipe/",
                 data:apiObj,
                 headers:{
                     'x-access-token':localStorage.getItem("token")
