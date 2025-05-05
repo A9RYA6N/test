@@ -16,7 +16,7 @@ const Signup = () => {
             }
             axios({
                 method:"POST",
-                url:"http://localhost:3001/user/signup",
+                url:"https://test-zeta-one-58.vercel.app/user/signup",
                 data:apiObj,
             }).then((res)=>{
                 alert("Account made!")

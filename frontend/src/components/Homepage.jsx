@@ -9,7 +9,7 @@ const Homepage = () => {
     useEffect(()=>{
         axios({
             method:"GET",
-            url:"http://localhost:3001/recipes/",
+            url:"https://test-zeta-one-58.vercel.app/recipes/",
         }).then((res)=>{
             setRecipes(res.data.data)
         })

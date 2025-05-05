@@ -19,7 +19,7 @@ const Updaterecipe = () => {
             }
             axios({
                 method:"PUT",
-                url:`http://localhost:3001/recipes/${id}`,
+                url:`https://test-zeta-one-58.vercel.app/recipes/${id}`,
                 data:apiObj,
             }).then((res)=>{
                 alert("Recipe updated!")
