@@ -13,6 +13,18 @@ const Allrecipes = ({recipe}) => {
             <p class="font-normal text-gray-700 dark:text-gray-400">{recipe.cookingTime}</p>
             </a>
             <button onClick={()=>{navigate(`/recipe/update/${recipe._id}`)}}>Update recipe</button>
+            <button onClick={()=>{
+                axios({
+                    method:"DELETE",
+                    url:`https://test-zeta-one-58.vercel.app/recipes/${id}`,
+                    headers:{
+                        'x-access-token':localStorage.getItem("token")
+                    }
+                }).then((res)=>{
+                    alert("Recipe deleted!");
+                    window.location.reload();
+                })
+            }}>Delete recipe</button>
         </div>
     )
 }

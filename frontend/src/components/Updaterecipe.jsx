@@ -21,6 +21,9 @@ const Updaterecipe = () => {
                 method:"PUT",
                 url:`https://test-zeta-one-58.vercel.app/recipes/${id}`,
                 data:apiObj,
+                headers:{
+                    'x-access-token':localStorage.getItem("token")
+                }
             }).then((res)=>{
                 alert("Recipe updated!")
             })
