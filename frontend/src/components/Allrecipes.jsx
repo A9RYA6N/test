@@ -12,7 +12,7 @@ const Allrecipes = ({recipe}) => {
             <p class="font-normal text-gray-700 dark:text-gray-400">{recipe.steps}</p>
             <p class="font-normal text-gray-700 dark:text-gray-400">{recipe.cookingTime}</p>
             </a>
-            <button onClick={()=>{navigate('/')}}>Update recipe</button>
+            <button onClick={()=>{navigate(`/recipe/update/${recipe._id}`)}}>Update recipe</button>
         </div>
     )
 }
