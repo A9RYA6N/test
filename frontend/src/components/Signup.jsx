@@ -11,6 +11,7 @@ const Signup = () => {
         setLoading(true);
         try {
             const apiObj={
+                name:name,
                 email:email,
                 password:password
             }
